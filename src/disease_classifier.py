@@ -1,10 +1,5 @@
 """
 disease_classifier.py
-======================
-Stage 1: RandomForestClassifier
-- Input  : list of symptoms selected by user
-- Output : predicted disease + medical specialty needed
-- Uses GridSearchCV with 5-fold cross-validation for tuning
 """
 
 import pandas as pd

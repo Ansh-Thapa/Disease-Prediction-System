@@ -1,8 +1,5 @@
 """
 hospital_recommender.py
-========================
-Stage 2: TF-IDF + Cosine Similarity  →  hospital matching
-Stage 3: Rule-Based Filtering        →  budget / location / emergency filter
 """
 
 import pandas as pd

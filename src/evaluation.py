@@ -7,8 +7,6 @@ Generates all evaluation charts required by the assignment:
 - Accuracy curve
 - ROC curve (one-vs-rest)
 - Model comparison bar chart
-- Specialty distribution pie chart
-- Similarity method comparison
 """
 
 import pandas as pd

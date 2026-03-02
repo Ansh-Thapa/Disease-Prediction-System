@@ -1,9 +1,5 @@
 """
 data_preparation.py
-====================
-- Cleans raw Nepal hospital dataset (nepal_hxl.csv)
-- Adds synthetic columns: specialties, fees, emergency, rating, tier, etc.
-- Saves enriched hospitals.csv to data/processed/
 """
 
 import pandas as pd
