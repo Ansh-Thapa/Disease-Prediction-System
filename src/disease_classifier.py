@@ -101,17 +101,17 @@ class DiseaseClassifier:
         X_noisy = X.copy().values.astype(float)
         n_samples, n_features = X_noisy.shape
 
-        # 1. Dropout: 12% of present symptoms are forgotten
+        # 1. Dropout:
         present = X_noisy == 1
         dropout = rng.random(X_noisy.shape) < noise_level
         X_noisy[present & dropout] = 0
 
-        # 2. False positives: 4% chance of spurious symptom
+        # 2. False positives:
         absent = X_noisy == 0
         false_pos = rng.random(X_noisy.shape) < 0.04
         X_noisy[absent & false_pos] = 1
 
-        # 3. Label noise: confusable disease pairs (share many real symptoms)
+        # 3. Label noise:
         confusable_groups = [
             ["hepatitis A","Hepatitis B","Hepatitis C","Hepatitis D","Hepatitis E","Alcoholic hepatitis"],
             ["Hypothyroidism","Hyperthyroidism","Hypoglycemia","Diabetes"],
